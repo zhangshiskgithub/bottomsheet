@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 // apply plugin: 'com.novoda.bintray-release'
-apply plugin: 'maven-publish' 
+apply plugin: 'maven' 
 android {
     compileSdkVersion 23
     buildToolsVersion '23.0.2'
@@ -28,17 +28,8 @@ uploadArchives {
     repositories {
         mavenDeployer {
             pom.groupId = "com.github.zhangshiskgithub"
-            pom.artifactId = "bottomsheet"
+            pom.artifactId = "bottomsheet"  // commons 模块写 bottomsheet-commons
             pom.version = "1.5.3"
         }
     }
 }
-// publish {
-//     userOrg = 'flipboard'
-//     groupId = 'com.flipboard'
-//     artifactId = 'bottomsheet-core'
-//     publishVersion = VERSION
-//     description = 'Android component which presents a dismissible view from the bottom of the screen'
-//     website = 'https://github.com/Flipboard/bottomsheet'
-//     licences = ['BSD 3-Clause']
-// }
