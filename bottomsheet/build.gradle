@@ -27,6 +27,7 @@ dependencies {
 uploadArchives {
     repositories {
         mavenDeployer {
+            repository(url: "file://localhost/tmp/repo/")
             pom.groupId = "com.github.zhangshiskgithub"
             pom.artifactId = "bottomsheet"  // commons 模块写 bottomsheet-commons
             pom.version = "1.5.3"
