@@ -23,14 +23,12 @@ dependencies {
     compile project(':bottomsheet')
     compile 'com.android.support:appcompat-v7:23.2.0'
 }
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId = 'com.github.zhangshiskgithub'
-            artifactId = 'bottomsheet-commons'
-            version = '1.0.4'
-            
-            from components.release
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = "com.github.zhangshiskgithub"
+            pom.artifactId = "bottomsheet-commons"
+            pom.version = "1.5.3"
         }
     }
 }
