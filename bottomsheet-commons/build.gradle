@@ -24,12 +24,12 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.0'
 }
 
-publish {
-    userOrg = 'flipboard'
-    groupId = 'com.flipboard'
-    artifactId = 'bottomsheet-commons'
-    publishVersion = VERSION
-    description = 'Common components library for BottomSheet'
-    website = 'https://github.com/Flipboard/bottomsheet'
-    licences = ['BSD 3-Clause']
-}
+// publish {
+//     userOrg = 'flipboard'
+//     groupId = 'com.flipboard'
+//     artifactId = 'bottomsheet-commons'
+//     publishVersion = VERSION
+//     description = 'Common components library for BottomSheet'
+//     website = 'https://github.com/Flipboard/bottomsheet'
+//     licences = ['BSD 3-Clause']
+// }
